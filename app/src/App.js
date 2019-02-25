@@ -18,7 +18,7 @@ const App = () => {
   const loadWasm = async () => {
     try {
       setLoading(true);
-      const wasm = await import('hello-wasm');
+      const wasm = await import('@prichey/hello-wasm');
       setWasm(wasm);
     } finally {
       setLoading(false);
